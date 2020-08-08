@@ -1,6 +1,6 @@
 # xubuntu_persistent
 
-Script d'intallation automatique sur Xubuntu USB persistent avec mkusb https://help.ubuntu.com/community/mkusb
+Scripts d'intallation automatique sur Xubuntu USB persistent avec mkusb https://help.ubuntu.com/community/mkusb
 
 # Version
 
@@ -14,6 +14,12 @@ La version courante est XUbuntu 20.04 LTS.  XUbuntu est facile à utiliser pour 
 
 # Étape préliminaire à suivre
 
+## Installer XUbuntu
+
+* Installez https://rufus.ie/
+* Connectez votre clé USB no. 1 et installez XUbuntu avec Rufus.
+* Entrez votre clé USB no. 1 et redémarrez votre ordinateur en faisant en sorte de démarrer sur la clé USB.
+
 ## Sur la clé USB no. 1
 
 Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent.git  Consultez la page pour copier les commandes ci-bas.
@@ -23,6 +29,9 @@ Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent
 3. Exécuter cd xubuntu_persistent.git
 4. Exécuter chmod +x init.sh
 5. Exécuter sudo ./init.sh
+6. Branchez la clé USB no. 2
+7. Téléchargez le fichier ISO de XUbuntu par la commande texte: wget http://mirror.csclub.uwaterloo.ca/xubuntu-releases/20.04/release/xubuntu-20.04.1-desktop-amd64.iso
+6. Démarrez la commande mkusb pour installer XUbuntu (plus de détails par vidéo).
 
 ## Sur la clé USB no. 2
 
