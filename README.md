@@ -12,21 +12,29 @@ La version courante est XUbuntu 20.04 LTS.  XUbuntu est facile à utiliser pour 
 * https://linuxconfig.org/how-to-install-docker-compose-on-ubuntu-20-04-focal-fossa-linux
 * https://rufus.ie/
 
-# Étapes a suivre
+# Étape préliminaire à suivre
 
 ## Sur la clé USB no. 1
 
-2. Installer git par la commande sudo apt install git
-3. Exécuter: git clone https://github.com/demers/xubuntu_persistent.git
-4. Exécuter cd xubuntu_persistent.git
-5. Exécuter chmod +x init.sh
-6. Exécuter sudo ./init.sh
+Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent.git  Consultez la page pour copier les commandes ci-bas.
+
+1. Installer git par la commande sudo apt install git
+2. Exécuter: git clone https://github.com/demers/xubuntu_persistent.git
+3. Exécuter cd xubuntu_persistent.git
+4. Exécuter chmod +x init.sh
+5. Exécuter sudo ./init.sh
 
 ## Sur la clé USB no. 2
 
+Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent.git  Consultez la page pour copier les commandes ci-bas.
 
+1. Installer git par la commande sudo apt install git
+2. Exécuter: git clone https://github.com/demers/xubuntu_persistent.git
+3. Exécuter cd xubuntu_persistent.git
+4. Exécuter chmod +x run.sh
+5. Exécuter sudo ./run.sh
 
-# Commandes à exécuter sous Windows 10
+# Commandes à exécuter sous Windows 10 pour avoir accès à la partition NTFS
 
 ```
 diskmgmt.msc
