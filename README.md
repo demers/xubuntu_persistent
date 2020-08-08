@@ -14,8 +14,8 @@ La version courante est XUbuntu 20.04 LTS.  XUbuntu est facile à utiliser pour 
 
 # Étapes a suivre
 
-1 Démarrer Xubuntu sur la clé USB no. 1
-1 Installer mkubs
+1. Démarrer Xubuntu sur la clé USB no. 1
+2. Installer mkubs
 
 # Commandes à exécuter sous Windows 10
 
