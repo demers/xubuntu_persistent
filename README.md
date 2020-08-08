@@ -2,11 +2,17 @@
 
 Script d'intallation automatique sur Xubuntu USB persistent avec mkusb https://help.ubuntu.com/community/mkusba
 
-# Sites
+# Version
+
+La version courante est XUbuntu 20.04 LTS.  XUbuntu est facile à utiliser pour un débutant.
+
+# Sites de référence
 
 * https://linuxconfig.org/how-to-install-docker-on-ubuntu-20-04-lts-focal-fossa
 * https://linuxconfig.org/how-to-install-docker-compose-on-ubuntu-20-04-focal-fossa-linux
 * https://rufus.ie/
+
+# étapes a suivre
 
 # Commandes à exécuter sous Windows 10
 
