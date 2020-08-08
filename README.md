@@ -14,8 +14,17 @@ La version courante est XUbuntu 20.04 LTS.  XUbuntu est facile à utiliser pour 
 
 # Étapes a suivre
 
-1. Démarrer Xubuntu sur la clé USB no. 1
-2. Installer mkubs
+## Sur la clé USB no. 1
+
+2. Installer git par la commande sudo apt install git
+3. Exécuter: git clone https://github.com/demers/xubuntu_persistent.git
+4. Exécuter cd xubuntu_persistent.git
+5. Exécuter chmod +x init.sh
+6. Exécuter sudo ./init.sh
+
+## Sur la clé USB no. 2
+
+
 
 # Commandes à exécuter sous Windows 10
 
