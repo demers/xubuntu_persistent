@@ -1,6 +1,6 @@
 # xubuntu_persistent
 
-Script d'intallation automatique sur Xubuntu USB persistent avec mkusb https://help.ubuntu.com/community/mkusba
+Script d'intallation automatique sur Xubuntu USB persistent avec mkusb https://help.ubuntu.com/community/mkusb
 
 # Version
 
@@ -12,7 +12,10 @@ La version courante est XUbuntu 20.04 LTS.  XUbuntu est facile à utiliser pour 
 * https://linuxconfig.org/how-to-install-docker-compose-on-ubuntu-20-04-focal-fossa-linux
 * https://rufus.ie/
 
-# étapes a suivre
+# Étapes a suivre
+
+1 Démarrer Xubuntu sur la clé USB no. 1
+1 Installer mkubs
 
 # Commandes à exécuter sous Windows 10
 
