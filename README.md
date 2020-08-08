@@ -36,90 +36,36 @@ Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent
 
 # Commandes à exécuter sous Windows 10 pour avoir accès à la partition NTFS
 
+Le logiciel mkusb crée une partition NTFS mais elle n'est pas disponible sous Windows.  Pour arriver à y accéder, nous devez utiliser le logiciel Windows suivant
+
 ```
 diskmgmt.msc
 ```
 
-* Supprimer la partition 4 (la dernière de la liste)
+Sur la clé USB, vous supprimez la partition 4 (la dernièere de la liste à droite).  Vous recréez une nouvelle partition de type NTFS.
 
-# Logiciels a installer sous Linux
+# Liste des logiciels installés sous Linux par le script run.sh
 
-## Synaptic
+* Synaptic
+* Docker et Docker-compose
+* Anydesk
+* Zoom
+* VSCodium
+* .NET core
+* Rider
+* Atom
+* Java JDK
+* Eclipse
+* MS Teams
+* Diodon
+* gnome-disks
 
-```
-sudo apt install synaptic
-```
 
-## Docker et Docker-compose
-
-(voir sites ci-haut)
-
-## AnyDesk
-
-* Allez sur anydesk.com
-
-## Zoom
-
-* Allez sur zoom.com
-
-## VSCodium
-
-https://vscodium.com/
-
-## c#
-
-Voir https://linuxhint.com/install_dot_net_core_ubuntu/
-
-```
-sudo apt install dotnet-sdk-3.1
-```
-
-## Rider
-
-```
-sudo snap install rider --classic
-```
-
-## Atom
-
-```
-sudo snap install atom --classic
-```
-
-## Java JDK
-
-```
-sudo apt-get install openjdk-11-jdk
-```
-
-## Eclipse
-
-```
-sudo snap install --classic eclipse
-```
-
-## MS Teams
-
-```
-sudo apt install curl
-curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
-echo "deb [arch=amd64] https://packages.microsoft.com/repos/ms-teams stable main" | sudo tee /etc/apt/sources.list.d/teams.list
-sudo apt update
-sudo apt install teams
-
-```
-
-## Diodon
-
-```
-sudo apt install diodon
-```
-
-# Taches a apprendre
+# Taches à réaliser manuellement
 
 ## Partition usbdata
 
-Double-cliquez sur le disque usbdata sur le bureau
+Double-cliquez sur le disque usbdata sur le bureau pour accéder à la partition des données.
 
 ## Changer le fuseau horaire de l'heure
 
@@ -144,11 +90,7 @@ Double-cliquez sur le disque usbdata sur le bureau
 
 ## Partition Windows
 
-* Installer le logiciel gnome-disks par la commande
-```
-sudo apt install gnome-disk-utility
-```
-* Identifiez la partition NTFS et faire en sorte qu'elle soit monte automatiquement
-* Desactiver User Settings Defaults et OK.
+* Identifiez la partition NTFS et faire en sorte qu'elle soit monté automatiquement
+* Désactiver 'User Settings Defaults' et OK.
 
 
