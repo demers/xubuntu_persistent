@@ -43,7 +43,7 @@ Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent
 4. Exécuter chmod +x run.sh
 5. Exécuter sudo ./run.sh
 
-# Commandes à exécuter sous Windows 10 pour avoir accès à la partition NTFS
+# Commandes à exécuter sous Windows 10
 
 Le logiciel mkusb crée une partition NTFS mais elle n'est pas disponible sous Windows.  Pour arriver à y accéder, nous devez utiliser le logiciel Windows suivant
 
@@ -51,7 +51,11 @@ Le logiciel mkusb crée une partition NTFS mais elle n'est pas disponible sous W
 diskmgmt.msc
 ```
 
-Sur la clé USB, vous supprimez la partition 4 (la dernièere de la liste à droite).  Vous recréez une nouvelle partition de type NTFS.
+Sur la clé USB, vous supprimez la partition 4 (la dernièere de la liste à droite).  Vous recréez une nouvelle partition de type NTFS.  Voir les explications dans la vidéo d'aide.
+
+# Désactiver le 'fast startup' sous Windows
+
+Suivre la procédure à https://winbuzzer.com/2020/05/19/how-to-disable-windows-10-fast-startup-hiberboot-hybrid-boot-hybrid-shutdown-xcxwbt/ par exemple.
 
 # Liste des logiciels installés sous Linux par le script run.sh
 
@@ -65,41 +69,43 @@ Sur la clé USB, vous supprimez la partition 4 (la dernièere de la liste à dro
 * Atom
 * Java JDK
 * Eclipse
+* Node.JS et NPM
+* Yeoman et jHipster
 * MS Teams
 * Diodon
 * gnome-disks
 
-
 # Taches à réaliser manuellement
 
-## Partition usbdata
+## Partition usbdata (NTFS)
 
-Double-cliquez sur le disque usbdata sur le bureau pour accéder à la partition des données.
+Utilisez l'application `gnome-disks` pour faire en sorte que la partition soit
+montée automatiquement au démarrage.  Pour se faire, il faut désactiver `User Settings Defaults`.  Il faut lui associer un point d'accès.
+Voir la vidéo d'aide.
+
+Ensuite, il sera possible de double-cliquer sur le disque usbdata (ou équivalent) sur le bureau pour accéder à la partition des données.  La partition sera montée et rendue accessible.
 
 ## Changer le fuseau horaire de l'heure
 
-* Clique-droit sur la date en haut a droite
-* Voir Proprietes
-* Cliquez sur Time and Date Settings
-* Cliquez sur Timezone et choisir Toronto.
+* Clique-droit sur la date en haut à droite;
+* Voir Propriétés;
+* Cliquez sur `Time and Date Settings`
+* Cliquez sur `Timezone` et choisir Toronto.
 
 ## Installer le clavier francais
 
-* Chercher l'application keyboard
-* Decocher le default
-* Choisir la langue francaise multilingue
+* Chercher l'application `keyboard` dans le menu en haut à droite;
+* Décocher le `default`
+* Choisir le clavier de la langue française multilingue;
+* Supprimer les autres claviers.
 
 ## Installer les écrans virtuelles
 
-* Clique-droit sur la barre du haut
-* Panel
-* Add New items
-* Ajouter Workspace switcher
-* Aller dans Workspace settings et ajouter des écrans virtuelles
-
-## Partition Windows
+* Clique-droit sur la barre du haut dans un espace sans rien;
+* Choisir `Panel`
+* Choisir `Add New items`
+* Ajouter `Workspace switcher`
+* Aller dans `Workspace settings` et ajouter des écrans virtuelles
 
 * Identifiez la partition NTFS et faire en sorte qu'elle soit monté automatiquement
-* Désactiver 'User Settings Defaults' et OK.
-
 
