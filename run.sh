@@ -47,9 +47,20 @@ snap install atom --classic
 
 # Installation Java JDK
 apt-get install -y openjdk-11-jdk
+apt-get install -y maven
 
 # Installation Eclipse
 snap install --classic eclipse
+
+# Installation NodeJS et NPM
+apt install -y nodejs npm
+npm install --global npm@latest
+
+# Installation Yeoman
+npm install --global yo
+
+# Installation jHipster
+npm install -g generator-jhipster
 
 # Installation MS Teams
 curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
@@ -62,4 +73,8 @@ apt install -y diodon
 
 # Gestionnaire de disques
 apt install -y gnome-disk-utility
+
+# Enlever la limite des commandes mémorisés 'history'
+echo "export HISTFILESIZE=" >> ~/.bashrc
+echo "export HISTSIZE="  >> ~/.bashrc
 
