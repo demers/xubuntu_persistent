@@ -24,28 +24,28 @@ La version courante est XUbuntu 20.04 LTS.  XUbuntu est facile à utiliser pour 
 
 Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent.git  Consultez la page pour copier les commandes ci-bas.
 
-1. Installer git par la commande sudo apt install git
-2. Exécuter: git clone https://github.com/demers/xubuntu_persistent.git
-3. Exécuter cd xubuntu_persistent.git
-4. Exécuter chmod +x init.sh
-5. Exécuter sudo ./init.sh
-6. Branchez la clé USB no. 2
-7. Téléchargez le fichier ISO de XUbuntu par la commande texte: wget http://mirror.csclub.uwaterloo.ca/xubuntu-releases/20.04/release/xubuntu-20.04.1-desktop-amd64.iso
-6. Démarrez la commande mkusb pour installer XUbuntu (plus de détails par vidéo).
+1. Installer git par la commande `sudo apt install git`
+2. Exécuter: `git clone https://github.com/demers/xubuntu_persistent.git`
+3. Exécuter `cd xubuntu_persistent`
+4. Exécuter `chmod +x init.sh`
+5. Exécuter `sudo ./init.sh`
+6. Brancher la clé USB no. 2
+7. Télécharger le fichier ISO de XUbuntu par la commande texte: `wget http://mirror.csclub.uwaterloo.ca/xubuntu-releases/20.04/release/xubuntu-20.04.1-desktop-amd64.iso`
+6. Démarrez la commande `mkusb` pour installer XUbuntu (plus de détails par la vidéo).
 
 ## Sur la clé USB no. 2
 
 Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent.git  Consultez la page pour copier les commandes ci-bas.
 
-1. Installer git par la commande sudo apt install git
-2. Exécuter: git clone https://github.com/demers/xubuntu_persistent.git
-3. Exécuter cd xubuntu_persistent.git
-4. Exécuter chmod +x run.sh
-5. Exécuter sudo ./run.sh
+1. Installer git par la commande `sudo apt install git`
+2. Exécuter: `git clone https://github.com/demers/xubuntu_persistent.git`
+3. Exécuter `cd xubuntu_persistent`
+4. Exécuter `chmod +x run.sh`
+5. Exécuter `sudo ./run.sh`
 
 # Commandes à exécuter sous Windows 10
 
-Le logiciel mkusb crée une partition NTFS mais elle n'est pas disponible sous Windows.  Pour arriver à y accéder, nous devez utiliser le logiciel Windows suivant
+Le logiciel `mkusb` crée une partition NTFS mais elle n'est pas disponible sous Windows.  Pour arriver à y accéder, nous devez utiliser le logiciel Windows suivant
 
 ```
 diskmgmt.msc
@@ -108,4 +108,11 @@ Ensuite, il sera possible de double-cliquer sur le disque usbdata (ou équivalen
 * Aller dans `Workspace settings` et ajouter des écrans virtuelles
 
 * Identifiez la partition NTFS et faire en sorte qu'elle soit monté automatiquement
+
+## Changement du mot de passe du compte par défaut `xubuntu`
+
+* Faire la commande `sudo passwd xubuntu`
+* Taper le mot de passe courant qui est 'rien'... faire <entrer>
+* Entrer votre nouveau mot de passe
+* Entrer le mot de passe une 2ième fois.
 
