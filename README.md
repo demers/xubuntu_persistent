@@ -14,6 +14,28 @@ La version courante est XUbuntu 20.04 LTS.  XUbuntu est facile à utiliser pour 
 
 # Étape préliminaire à suivre
 
+Il y a deux approches possibles.  On peut utiliser Windows et Rufus pour créer une installation persistente.  Sinon, on peut utiliser une deuxième clé USB.
+
+## Approche Windows
+
+## Installation XUbuntu
+
+* Installez https://rufus.ie/
+* Entrez votre clé USB et partez Rufus.
+* Dans les paramètres de Rufus, choisissez un espace persistent de 20% de votre clé USB.  Pour 64 Go, choisissez 10 Go.  Pour 32 Go, choissisez 5 Go.
+
+## Sur la clé USB XUbuntu
+
+Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent.git  Consultez la page pour copier les commandes ci-bas.
+
+1. Installer git par la commande `sudo apt install git`
+2. Exécuter: `git clone https://github.com/demers/xubuntu_persistent.git`
+3. Exécuter `cd xubuntu_persistent`
+4. Exécuter `chmod +x run.sh`
+5. Exécuter `sudo ./run.sh`
+
+## Approche Linux
+
 ## Installer XUbuntu
 
 * Installez https://rufus.ie/
@@ -43,7 +65,7 @@ Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent
 4. Exécuter `chmod +x run.sh`
 5. Exécuter `sudo ./run.sh`
 
-# Commandes à exécuter sous Windows 10
+## Commandes à exécuter sous Windows 10
 
 Le logiciel `mkusb` crée une partition NTFS mais elle n'est pas disponible sous Windows.  Pour arriver à y accéder, nous devez utiliser le logiciel Windows suivant
 
