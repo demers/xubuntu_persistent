@@ -31,8 +31,7 @@ Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent
 1. Installer git par la commande `sudo apt install git`
 2. Exécuter: `git clone https://github.com/demers/xubuntu_persistent.git`
 3. Exécuter `cd xubuntu_persistent`
-4. Exécuter `chmod +x run.sh`
-5. Exécuter `sudo ./run.sh`
+4. Exécuter `sudo ./run.sh`
 
 ## Approche Linux
 
@@ -49,11 +48,10 @@ Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent
 1. Installer git par la commande `sudo apt install git`
 2. Exécuter: `git clone https://github.com/demers/xubuntu_persistent.git`
 3. Exécuter `cd xubuntu_persistent`
-4. Exécuter `chmod +x init.sh`
-5. Exécuter `sudo ./init.sh`
-6. Brancher la clé USB no. 2
-7. Télécharger le fichier ISO de XUbuntu par la commande texte: `wget http://mirror.csclub.uwaterloo.ca/xubuntu-releases/20.04/release/xubuntu-20.04.1-desktop-amd64.iso`
-6. Démarrez la commande `mkusb` pour installer XUbuntu (plus de détails par la vidéo).
+4. Exécuter `sudo ./init.sh`
+5. Brancher la clé USB no. 2
+6. Télécharger le fichier ISO de XUbuntu par la commande texte: `wget http://mirror.csclub.uwaterloo.ca/xubuntu-releases/20.04/release/xubuntu-20.04.1-desktop-amd64.iso`
+7. Démarrez la commande `mkusb` pour installer XUbuntu (plus de détails par la vidéo).
 
 ## Sur la clé USB no. 2
 
