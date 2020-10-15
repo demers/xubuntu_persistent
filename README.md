@@ -97,7 +97,7 @@ Suivre la procédure à https://winbuzzer.com/2020/05/19/how-to-disable-windows-
 
 # Taches à réaliser manuellement
 
-## Partition usbdata (NTFS)
+## Partition usbdata (NTFS) (seulement si vous avez adopté l'approche Linux)
 
 Utilisez l'application `gnome-disks` pour faire en sorte que la partition soit
 montée automatiquement au démarrage.  Pour se faire, il faut désactiver `User Settings Defaults`.  Il faut lui associer un point d'accès.
