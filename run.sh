@@ -77,7 +77,7 @@ apt install -y diodon
 apt install -y gnome-disk-utility
 
 # Suppression des paquetages inutiles
-apt autoremove
+apt -y autoremove
 
 # Enlever la limite des commandes mémorisés 'history'
 echo "export HISTFILESIZE=" >> ~/.bashrc
