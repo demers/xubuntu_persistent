@@ -14,24 +14,23 @@ La version courante est XUbuntu 20.04.1 LTS.  XUbuntu est facile à utiliser pou
 
 # Étape préliminaire à suivre
 
-## Installer XUbuntu
+## Installer XUbuntu sur la clé no. 1 sous Windows
 
-* Installez https://rufus.ie/
+* Installez https://rufus.ie/ sous Windows
 * Connectez votre clé USB no. 1 et installez XUbuntu avec Rufus.
 * Entrez votre clé USB no. 1 et redémarrez votre ordinateur en faisant en sorte de démarrer sur la clé USB.
 
 ## Sur la clé USB no. 1 (8 Go minimum)
 
-Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent.git  Consultez la page pour copier les commandes ci-bas.
+Sous XUbuntu, partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent.git  Consultez la page pour copier les commandes ci-bas.
 
 1. Installer git par la commande `sudo apt install git`
 2. Exécuter: `git clone https://github.com/demers/xubuntu_persistent.git`
 3. Exécuter `cd xubuntu_persistent`
-4. Exécuter `chmod +x init.sh`
-5. Exécuter `sudo ./init.sh`
-6. Brancher la clé USB no. 2
-7. Télécharger le fichier ISO de XUbuntu par la commande texte: `wget http://mirror.csclub.uwaterloo.ca/xubuntu-releases/20.04/release/xubuntu-20.04.1-desktop-amd64.iso`
-6. Démarrez la commande `mkusb` pour installer XUbuntu (plus de détails par la vidéo).
+4. Exécuter `sudo ./init.sh`
+5. Brancher la clé USB no. 2
+6. Télécharger le fichier ISO de XUbuntu par la commande texte: `wget http://mirror.csclub.uwaterloo.ca/xubuntu-releases/20.04/release/xubuntu-20.04.1-desktop-amd64.iso`
+7. Démarrez la commande `mkusb` pour installer XUbuntu (plus de détails par la vidéo).
 
 ## Sur la clé USB no. 2 (32 Go minimum)
 
@@ -40,8 +39,7 @@ Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent
 1. Installer git par la commande `sudo apt install git`
 2. Exécuter: `git clone https://github.com/demers/xubuntu_persistent.git`
 3. Exécuter `cd xubuntu_persistent`
-4. Exécuter `chmod +x run.sh`
-5. Exécuter `sudo ./run.sh`
+4. Exécuter `sudo ./run.sh`
 
 # Commandes à exécuter sous Windows 10
 
