@@ -26,7 +26,7 @@ apt install -y ./zoom_amd64.deb
 rm -f ./zoom_amd64.deb
 
 # Codium
-snap install codium
+snap install --classic codium
 #wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | apt-key add -
 #echo 'deb https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/debs/ vscodium main' | tee --append /etc/apt/sources.list.d/vscodium.list 
 #apt update
