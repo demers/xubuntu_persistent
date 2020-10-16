@@ -4,7 +4,7 @@ Scripts d'intallation automatique sur Xubuntu USB persistent avec mkusb https://
 
 # Version
 
-La version courante est XUbuntu 20.04 LTS.  XUbuntu est facile à utiliser pour un débutant.
+La version courante est XUbuntu 20.04.1 LTS.  XUbuntu est facile à utiliser pour un débutant.
 
 # Sites de référence
 
@@ -14,46 +14,26 @@ La version courante est XUbuntu 20.04 LTS.  XUbuntu est facile à utiliser pour 
 
 # Étape préliminaire à suivre
 
-Il y a deux approches possibles.  On peut utiliser Windows et Rufus pour créer une installation persistente.  Sinon, on peut utiliser une deuxième clé USB.
-
-## Approche Windows
-
-## Installation XUbuntu
-
-* Installez https://rufus.ie/
-* Entrez votre clé USB et partez Rufus.
-* Dans les paramètres de Rufus, choisissez un espace persistent de 20% de votre clé USB.  Pour 64 Go, choisissez 10 Go.  Pour 32 Go, choissisez 5 Go.
-
-## Sur la clé USB XUbuntu
-
-Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent.git  Consultez la page pour copier les commandes ci-bas.
-
-1. Installer git par la commande `sudo apt install git`
-2. Exécuter: `git clone https://github.com/demers/xubuntu_persistent.git`
-3. Exécuter `cd xubuntu_persistent`
-4. Exécuter `sudo ./run.sh`
-
-## Approche Linux
-
 ## Installer XUbuntu
 
 * Installez https://rufus.ie/
 * Connectez votre clé USB no. 1 et installez XUbuntu avec Rufus.
 * Entrez votre clé USB no. 1 et redémarrez votre ordinateur en faisant en sorte de démarrer sur la clé USB.
 
-## Sur la clé USB no. 1
+## Sur la clé USB no. 1 (8 Go minimum)
 
 Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent.git  Consultez la page pour copier les commandes ci-bas.
 
 1. Installer git par la commande `sudo apt install git`
 2. Exécuter: `git clone https://github.com/demers/xubuntu_persistent.git`
 3. Exécuter `cd xubuntu_persistent`
-4. Exécuter `sudo ./init.sh`
-5. Brancher la clé USB no. 2
-6. Télécharger le fichier ISO de XUbuntu par la commande texte: `wget http://mirror.csclub.uwaterloo.ca/xubuntu-releases/20.04/release/xubuntu-20.04.1-desktop-amd64.iso`
-7. Démarrez la commande `mkusb` pour installer XUbuntu (plus de détails par la vidéo).
+4. Exécuter `chmod +x init.sh`
+5. Exécuter `sudo ./init.sh`
+6. Brancher la clé USB no. 2
+7. Télécharger le fichier ISO de XUbuntu par la commande texte: `wget http://mirror.csclub.uwaterloo.ca/xubuntu-releases/20.04/release/xubuntu-20.04.1-desktop-amd64.iso`
+6. Démarrez la commande `mkusb` pour installer XUbuntu (plus de détails par la vidéo).
 
-## Sur la clé USB no. 2
+## Sur la clé USB no. 2 (32 Go minimum)
 
 Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent.git  Consultez la page pour copier les commandes ci-bas.
 
@@ -63,7 +43,7 @@ Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent
 4. Exécuter `chmod +x run.sh`
 5. Exécuter `sudo ./run.sh`
 
-## Commandes à exécuter sous Windows 10
+# Commandes à exécuter sous Windows 10
 
 Le logiciel `mkusb` crée une partition NTFS mais elle n'est pas disponible sous Windows.  Pour arriver à y accéder, nous devez utiliser le logiciel Windows suivant
 
@@ -97,7 +77,7 @@ Suivre la procédure à https://winbuzzer.com/2020/05/19/how-to-disable-windows-
 
 # Taches à réaliser manuellement
 
-## Partition usbdata (NTFS) (seulement si vous avez adopté l'approche Linux)
+## Partition usbdata (NTFS)
 
 Utilisez l'application `gnome-disks` pour faire en sorte que la partition soit
 montée automatiquement au démarrage.  Pour se faire, il faut désactiver `User Settings Defaults`.  Il faut lui associer un point d'accès.
