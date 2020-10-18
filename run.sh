@@ -76,6 +76,9 @@ apt install -y diodon
 # Gestionnaire de disques
 apt install -y gnome-disk-utility
 
+# Interpréteur Fish
+apt install -y fish
+
 # Suppression des paquetages inutiles
 apt -y autoremove
 
