@@ -39,7 +39,7 @@ Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent
 1. Installer git par la commande `sudo apt install git`
 2. Exécuter: `git clone https://github.com/demers/xubuntu_persistent.git`
 3. Exécuter `cd xubuntu_persistent`
-4. Exécuter `sudo ./run.sh`
+4. Exécuter `sudo ./run_min.sh`
 
 # Commandes à exécuter sous Windows 10
 
@@ -49,31 +49,20 @@ Le logiciel `mkusb` crée une partition NTFS mais elle n'est pas disponible sous
 diskmgmt.msc
 ```
 
-Sur la clé USB, vous supprimez la partition 4 (la dernièere de la liste à droite).  Vous recréez une nouvelle partition de type NTFS.  Voir les explications dans la vidéo d'aide.
+Sur la clé USB, vous supprimez la partition 4 (la dernière de la liste à droite).  Vous recréez une nouvelle partition de type NTFS.  Voir les explications dans la vidéo d'aide.
 
 # Désactiver le 'fast startup' sous Windows
 
 Suivre la procédure à https://winbuzzer.com/2020/05/19/how-to-disable-windows-10-fast-startup-hiberboot-hybrid-boot-hybrid-shutdown-xcxwbt/ par exemple.
 
-# Liste des logiciels installés sous Linux par le script run.sh
+# Liste des logiciels installés sous Linux par le script run_min.sh
 
 * Synaptic
 * Docker et Docker-compose
-* Anydesk
-* Zoom
 * VSCodium
-* .NET core
-* Rider
-* Atom
 * Java JDK
-* Eclipse
-* Node.JS et NPM
-* Yeoman et jHipster
-* MS Teams
-* Diodon
-* gnome-disks
 
-# Taches à réaliser manuellement
+# Tâches à réaliser manuellement
 
 ## Partition usbdata (NTFS)
 
