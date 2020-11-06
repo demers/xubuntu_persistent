@@ -28,10 +28,6 @@ rm -f ./packages-microsoft-prod.deb
 
 # Installation Java JDK
 apt-get install -y openjdk-11-jdk
-apt-get install -y maven
-
-# Interpréteur Fish
-apt install -y fish
 
 # Suppression des paquetages inutiles
 apt -y autoremove
