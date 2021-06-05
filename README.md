@@ -30,7 +30,11 @@ Sous XUbuntu, partez Firefox et allez sur la page https://github.com/demers/xubu
 4. Exécuter `sudo ./init.sh`
 5. Brancher la clé USB no. 2
 6. Télécharger le fichier ISO de XUbuntu par la commande texte: `wget http://mirror.csclub.uwaterloo.ca/xubuntu-releases/20.04/release/xubuntu-20.04.1-desktop-amd64.iso`
-7. Démarrez la commande `mkusb` pour installer XUbuntu (plus de détails par la vidéo).
+
+## Démarrer sur la clé USB no. 1
+
+1. Partir la commande `sudo -E hw-probe -all -upload`  Cela va vérifier la comptabilité de Linux sur votre ordinateur.  Un rapport sera produit et un URL sera fourni à consulter.
+2. Démarrer la commande `mkusb` pour installer XUbuntu (plus de détails par la vidéo).
 
 ## Sur la clé USB no. 2 (32 Go minimum)
 
