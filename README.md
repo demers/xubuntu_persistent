@@ -27,14 +27,14 @@ Sous XUbuntu, partez Firefox et allez sur la page https://github.com/demers/xubu
 1. Installer git par la commande `sudo apt install git`
 2. Exécuter: `git clone https://github.com/demers/xubuntu_persistent.git`
 3. Exécuter `cd xubuntu_persistent`
-4. Exécuter `sudo ./init.sh`
-5. Brancher la clé USB no. 2
-6. Télécharger le fichier ISO de XUbuntu par la commande texte: `wget http://mirror.csclub.uwaterloo.ca/xubuntu-releases/20.04/release/xubuntu-20.04.1-desktop-amd64.iso`
+4. Exécuter `sudo ./init.sh`  Cela va installer ce qui est nécessaire pour l'étape suivante.
 
-## Démarrer sur la clé USB no. 1
+## Exécuter sur la clé USB no. 1
 
-1. Partir la commande `sudo -E hw-probe -all -upload`  Cela va vérifier la comptabilité de Linux sur votre ordinateur.  Un rapport sera produit et un URL sera fourni à consulter.
-2. Démarrer la commande `mkusb` pour installer XUbuntu (plus de détails par la vidéo).
+1. Partir la commande `sudo -E hw-probe -all -upload`  Cela va vérifier la comptabilité de Linux sur votre ordinateur.  Un rapport sera produit et une adresse URL sera fournie pour consultation.  Vous pouvez constater le matériel plus ou moins reconnu pour Linux de votre ordinateur.
+2. Brancher la clé USB no. 2
+3. Télécharger le fichier ISO de XUbuntu par la commande texte: `wget http://mirror.csclub.uwaterloo.ca/xubuntu-releases/20.04/release/xubuntu-20.04.1-desktop-amd64.iso`
+4. Démarrer la commande `mkusb` pour installer XUbuntu (plus de détails par la vidéo).
 
 ## Sur la clé USB no. 2 (32 Go minimum)
 
