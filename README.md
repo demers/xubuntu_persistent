@@ -4,7 +4,7 @@ Scripts d'intallation automatique sur Xubuntu USB persistent avec mkusb https://
 
 # Version
 
-La version courante est XUbuntu 20.04.1 LTS.  XUbuntu est facile à utiliser pour un débutant.
+La version courante est XUbuntu 20.04.2 Focal.  XUbuntu est facile à utiliser pour un débutant.
 
 # Sites de référence
 
