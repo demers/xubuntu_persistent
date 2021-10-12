@@ -14,34 +14,38 @@ La version courante est XUbuntu 20.04 Focal Fossa.  XUbuntu est facile à utilis
 
 # Étape préliminaire à suivre
 
-Vous aurez besoin de deux (2) clés USB.  La première clé (no. 1) doit être de
-taille d'un minimum de 16 Go.  La deuxième clé (no. 2) est une clé d'au moins 32
+Vous aurez besoin de deux (2) clés USB.  La première clé (A) doit être de
+taille d'un minimum de 16 Go.  La deuxième clé (B) est une clé d'au moins 32
 Go et doit être de version USB 3.0
 
-## Installer XUbuntu sur la clé no. 1 sous Windows
+## Installer XUbuntu sur la clé A sous Windows
 
 * Installez d'abord Ventoy https://www.ventoy.net sous Windows
 * Connectez votre clé USB no. 1 et copiez le fichier ISO de la distribution
   XUbuntu https://xubuntu.org/download
 * Entrez votre clé USB no. 1 et redémarrez votre ordinateur en faisant en sorte de démarrer sur la clé USB.  Le menu Ventoy s'affichera et choisissez le fichier ISO de XUbuntu.
 
-## Sur la clé USB no. 1
+## Sur la clé USB A
 
 Sous XUbuntu, partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent.git  Consultez la page pour copier les commandes ci-bas.
 
+1. Mettre à jour les dépôts `sudo apt update`
 1. Installer git par la commande `sudo apt install git`
 2. Exécuter: `git clone https://github.com/demers/xubuntu_persistent.git`
 3. Exécuter `cd xubuntu_persistent`
 4. Exécuter `sudo ./init.sh`  Cela va installer ce qui est nécessaire pour l'étape suivante.
+5. Brancher la clé USB B
+6. Télécharger le fichier ISO de XUbuntu par la commande texte: `wget http://mirror.csclub.uwaterloo.ca/xubuntu-releases/20.04/release/xubuntu-20.04.3-desktop-amd64.iso`
+7. Démarrer la commande `mkusb` pour installer XUbuntu (plus de détails par la vidéo correspondante).
 
-## Exécuter sur la clé USB no. 1
+## Rapport de compatibilité à l'aide de la clé USB A
 
-1. Partir la commande `sudo -E hw-probe -all -upload`  Cela va vérifier la comptabilité de Linux sur votre ordinateur.  Un rapport sera produit et une adresse URL sera fournie pour consultation.  Vous pouvez constater le matériel plus ou moins reconnu pour Linux de votre ordinateur.
-2. Brancher la clé USB no. 2
-3. Télécharger le fichier ISO de XUbuntu par la commande texte: `wget http://mirror.csclub.uwaterloo.ca/xubuntu-releases/20.04/release/xubuntu-20.04.3-desktop-amd64.iso`
-4. Démarrer la commande `mkusb` pour installer XUbuntu (plus de détails par la vidéo correspondante).
+Partir la commande `sudo -E hw-probe -all -upload`  
 
-## Sur la clé USB no. 2
+Cela va vérifier la comptabilité de Linux sur votre ordinateur.  Un rapport sera produit et une adresse URL sera fournie pour consultation.  Vous pouvez constater le matériel plus ou moins reconnu pour Linux de votre ordinateur.
+
+
+## Sur la clé USB B
 
 Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent.git  Consultez la page pour copier les commandes ci-bas.
 
