@@ -56,6 +56,9 @@ snap connect chromium:gnome-3-28-1804 gnome-3-28-1804:gnome-3-28-1804
 
 # Installation NPM
 sudo apt install -y npm
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
 sudo npm install -g npm
 sudo npm install -g npm@8.1.1
 
