@@ -49,6 +49,7 @@ Cela va vérifier la comptabilité de Linux sur votre ordinateur.  Un rapport se
 
 Partez Firefox et allez sur la page https://github.com/demers/xubuntu_persistent.git  Consultez la page pour copier les commandes ci-bas.
 
+1. Mettre à jour les dépôts: `sudo apt update`
 1. Installer git par la commande `sudo apt install git`
 2. Exécuter: `git clone https://github.com/demers/xubuntu_persistent.git`
 3. Exécuter `cd xubuntu_persistent`
