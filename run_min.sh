@@ -48,6 +48,21 @@ rm -f ./packages-microsoft-prod.deb
 # Installation Java JDK
 apt-get install -y openjdk-11-jdk
 
+# Installation Chromium
+sudo apt-get install -y chromium-browser
+
+# Config pour crontab-ui
+snap connect chromium:gnome-3-28-1804 gnome-3-28-1804:gnome-3-28-1804
+
+# Installation NPM
+sudo apt install -y npm
+sudo npm install -g npm
+sudo npm install -g npm@8.1.1
+
+snap install wine-platform-6-stable
+snap install wine-platform-runtime
+#snap connect notepad-plus-plus:wine-6-stable wine-platform-6-stable
+#snap connect notepad-plus-plus:wine-runtime wine-platform-runtime
 
 # Suppression des paquetages inutiles
 apt -y autoremove
