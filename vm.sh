@@ -25,7 +25,7 @@ chmod +x /usr/local/bin/docker-compose
 apt install -y fish
 
 # Installation du menu pour les scripts Bash
-apt install -y zenity dialog
+apt install -y dialog
 
 # Installation de l'outil de gestion des fenêtres texte
 apt install -y byobu
