@@ -6,15 +6,17 @@ apt upgrade
 # Gestionnaire d'installation
 apt install -y synaptic
 
+#echo "{" > /etc/docker/daemon.json
+#echo "\"storage-driver\": \"vfs\"" >> /etc/docker/daemon.json
+#echo "}" >> /etc/docker/daemon.json
+#systemctl restart docker
+rm -f /etc/docker/daemon.json
+apt purge -y docker.io
+
 # Installation Docker
 apt install -y docker.io
 systemctl enable --now docker
 usermod -aG docker xubuntu
-
-echo "{" > /etc/docker/daemon.json
-echo "\"storage-driver\": \"vfs\"" >> /etc/docker/daemon.json
-echo "}" >> /etc/docker/daemon.json
-systemctl restart docker
 
 # Installation Docker compose
 apt install -y curl
